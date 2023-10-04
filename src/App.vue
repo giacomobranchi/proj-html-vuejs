@@ -325,7 +325,7 @@ export default {
     </section>
     <div class="banner py-4">
       <div class="container">
-        <img src="./assets/img/page-banner-1.webp" width="100%" alt="">
+        <img src="./assets/img/page-banner-1.webp" style="width: 100%;" alt="">
       </div>
     </div>
     <section class="featured">
@@ -377,21 +377,107 @@ export default {
         </div>
       </div>
     </section>
-    <section class="player">
+    <section class="player mt-4 py-4">
+      <div class="container d-flex justify-content-center">
+        <iframe width="800" height="400"
+          src="https://www.youtube.com/embed/videoseries?si=HjHouNmK6Ju1-Wlx&amp;list=PLRe9ARNnYSY6bYx-ZE_Tx5llrFI5u4laE"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+
+      </div>
 
     </section>
-    <section>
-
+    <section class="categories mb-4">
+      <div class="row">
+        <div class="row justify-content-center p-0 m-0">
+          <div class="col_2">
+            <div class="card" style="width: 100%%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col_2">
+            <div class="card" style="width: 100%%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col_2">
+            <div class="card" style="width: 100%%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col_2">
+            <div class="card" style="width: 100%%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col_2">
+            <div class="card" style="width: 100%%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col_2">
+            <div class="card" style="width: 100%%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-2"></div>
-        <div class="col-2"></div>
-        <div class="col-2"></div>
-        <div class="col-4"></div>
+        <div class="col-2">
+          <ul>
+            <li>GET STARTED</li>
+            <li>Resources</li>
+            <li>Tutorials</li>
+            <li>Esamples</li>
+            <li>Docs</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>ABOUT</li>
+            <li>Stories</li>
+            <li>Community</li>
+            <li>Blog</li>
+            <li>Brand Assets</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>FEATURES</li>
+            <li>Overwiev</li>
+            <li>Design</li>
+            <li>Code</li>
+            <li>Collaborate</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>QUICK LINKS</li>
+            <li>Stories</li>
+            <li>Community</li>
+            <li>Blog</li>
+            <li>Brand Assets</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div>SUBSCRIBE TO NEWSLETTER</div>
+          <input type="text" name="email" id="" placeholder="Email">
+          <button type="button" class="btn btn_bg w-100">Read More</button>
+        </div>
+      </div>
+      <hr>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-2">
+          <img src="./assets/img/anime-whitelogo-300x89.png" alt="">
+        </div>
+        <div class="col-3">
+          <small>© Anime Tech, Theme by HasnainDEV</small>
+        </div>
       </div>
     </div>
   </footer>
@@ -459,6 +545,39 @@ main {
       border-radius: 1.5rem;
       margin-top: 0.5rem;
     }
+  }
+
+  & .categories {
+    & .row {
+      width: 99vw;
+    }
+
+    & .col_2 {
+      width: calc(100% / 7);
+
+    }
+  }
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: #bf1d2e;
+  box-shadow: inset 0px 3px 5px #000000;
+  color: white;
+
+  & ul {
+    list-style: none;
+
+  }
+
+  & input {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  & button {
+
+    background-color: #555353;
   }
 }
 </style>
