@@ -155,29 +155,41 @@ export default {
         <div class="card" style="width: 28rem;">
           <img src="./assets/img/healthy-foods.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">The Best Healty Foods in 2022</h5>
-            <p class="card-text">December 26, 2022</p>
+            <h5 class="card-title text-center">The Best Healty Foods in 2022</h5>
+            <div class="card-text text-center">
+              <div>December 26, 2022</div>
+
+            </div>
           </div>
         </div>
         <div class="card" style="width: 28rem;">
           <img src="./assets/img/winter.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">The Best Winter Outfits</h5>
-            <p class="card-text">December 26, 2022</p>
+            <h5 class="card-title text-center">The Best Winter Outfits</h5>
+            <div class="card-text text-center">
+              <div>December 26, 2022</div>
+
+            </div>
           </div>
         </div>
         <div class="card" style="width: 28rem;">
           <img src="./assets/img/photographers-mistakes.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Beginner Photographer's Mistakes</h5>
-            <p class="card-text">December 26, 2022</p>
+            <h5 class="card-title text-center">Beginner Photographer's Mistakes</h5>
+            <div class="card-text text-center">
+              <div>December 26, 2022</div>
+
+            </div>
           </div>
         </div>
         <div class="card" style="width: 28rem;">
           <img src="./assets/img/ideas-anime.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Live Ideas You Might Be Anime</h5>
-            <p class="card-text">December 26, 2022</p>
+            <h5 class="card-title text-center">Live Ideas You Might Be Anime</h5>
+            <div class="card-text text-center">
+              <div>December 26, 2022</div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -213,7 +225,7 @@ export default {
     <section class="lifestyle">
       <div class="container">
         <div class="d-flex justify-content-between">
-          <h1>LIFESTYLE & STORIES</h1>
+          <h2 class="pb-3">LIFESTYLE & STORIES</h2>
           <div>
             <div class="badge mx-1 p-2">ALL</div>
             <div class="badge mx-1 p-2">LIFESTYLE</div>
@@ -311,11 +323,59 @@ export default {
         </div>
       </div>
     </section>
-    <div class="banner">
-
+    <div class="banner py-4">
+      <div class="container">
+        <img src="./assets/img/page-banner-1.webp" width="100%" alt="">
+      </div>
     </div>
     <section class="featured">
-
+      <div class="container">
+        <h2 class="pb-3">FEATURED POSTS</h2>
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 100%;">
+              <img src="./assets/img/ideas-anime.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Live Ideas You Might Be Anime</h5>
+                <div class="card-text text-center">
+                  <div>December 26, 2022</div>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident a vitae numquam ab enim!
+                  </div>
+                  <button type="button" class="btn btn_bg">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%;">
+              <img src="./assets/img/visit-france.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">The Best Healty Foods in 2022</h5>
+                <div class="card-text text-center">
+                  <div>December 26, 2022</div>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident a vitae numquam ab enim!
+                  </div>
+                  <button type="button" class="btn btn_bg">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%;">
+              <img src="./assets/img/travel-alone.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">The Best Healty Foods in 2022</h5>
+                <div class="card-text text-center">
+                  <div>December 26, 2022</div>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident a vitae numquam ab enim!
+                  </div>
+                  <button type="button" class="btn btn_bg">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="player">
 
@@ -379,6 +439,25 @@ main {
   & .lifestyle {
     & .badge {
       background-color: #555353;
+    }
+  }
+
+  & .banner {
+    background-color: #f3f3f3;
+    margin: 2rem 0;
+  }
+
+  & .featured {
+    & .card-body {
+      background-color: #f3f3f3;
+    }
+
+    & .btn_bg {
+      background-color: #bf1d2e;
+      color: white;
+      padding: 0.4rem 3rem;
+      border-radius: 1.5rem;
+      margin-top: 0.5rem;
     }
   }
 }
