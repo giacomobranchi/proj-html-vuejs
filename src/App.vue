@@ -184,6 +184,29 @@ export default {
     </div>
     <section class="jumbo">
       <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="card" style="width: 100%;">
+              <img src="./assets/img/healthy-foods.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card mt-3" style="width: 100%;">
+              <img src="./assets/img/healthy-foods.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card" style="width: 100%;">
+              <img src="./assets/img/healthy-foods.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 100%;">
+              <img src="./assets/img/healthy-foods.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card mt-3" style="width: 100%;">
+              <img src="./assets/img/healthy-foods.webp" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -251,5 +274,8 @@ main {
     background-color: #f3f3f3;
   }
 
+  & .jumbo {
+    padding: 4rem 0;
+  }
 }
 </style>
