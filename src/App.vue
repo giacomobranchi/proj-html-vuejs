@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader></AppHeader>
+  <AppHeader home="HOME" lifestyle="LIFESTYLE" stories="STORIES" pages="PAGES" aboutUs="ABOUT US"></AppHeader>
   <AppMain></AppMain>
   <AppFooter></AppFooter>
 </template>
