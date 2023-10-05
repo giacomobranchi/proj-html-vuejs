@@ -3,7 +3,27 @@ export default {
     data() {
         return {
             name: 'AppFooter',
-            bgBtn: 'background-color: #555353; color: white;'
+            bgBtn: 'background-color: #555353; color: white;',
+            footerLinks: [{
+                getStarted: {
+                    title: 'GET STARTED',
+                    voice: ['Resources', 'Tutorials', 'Examples', 'Docs']
+                },
+                about: {
+                    title: 'ABOUT',
+                    voice: ['Stories', 'Community', 'Blog', 'Brand Assets']
+
+                },
+                features: {
+                    title: 'FEATURES',
+                    voice: ['Overwiev', 'Design', 'Code', 'Collaborate']
+
+                },
+                quickLinks: {
+                    title: 'QUICK LINKS',
+                    voice: ['Stories', 'Community', 'Blog', 'Brand Assets']
+                },
+            }]
         }
     },
     methods: {
@@ -22,40 +42,32 @@ export default {
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div v-for="link in footerLinks" class="col-2">
                     <ul>
-                        <li>GET STARTED</li>
-                        <li>Resources</li>
-                        <li>Tutorials</li>
-                        <li>Esamples</li>
-                        <li>Docs</li>
+                        <li>{{ link.getStarted.title }}</li>
+                        <li v-for="voice in link.getStarted.voice">{{ voice }}</li>
+
                     </ul>
                 </div>
-                <div class="col-2">
+                <div v-for="link in footerLinks" class="col-2">
                     <ul>
-                        <li>ABOUT</li>
-                        <li>Stories</li>
-                        <li>Community</li>
-                        <li>Blog</li>
-                        <li>Brand Assets</li>
+                        <li>{{ link.about.title }}</li>
+                        <li v-for="voice in link.about.voice">{{ voice }}</li>
+
                     </ul>
                 </div>
-                <div class="col-2">
+                <div v-for="link in footerLinks" class="col-2">
                     <ul>
-                        <li>FEATURES</li>
-                        <li>Overwiev</li>
-                        <li>Design</li>
-                        <li>Code</li>
-                        <li>Collaborate</li>
+                        <li>{{ link.features.title }}</li>
+                        <li v-for="voice in link.features.voice">{{ voice }}</li>
+
                     </ul>
                 </div>
-                <div class="col-2">
+                <div v-for="link in footerLinks" class="col-2">
                     <ul>
-                        <li>QUICK LINKS</li>
-                        <li>Stories</li>
-                        <li>Community</li>
-                        <li>Blog</li>
-                        <li>Brand Assets</li>
+                        <li>{{ link.quickLinks.title }}</li>
+                        <li v-for="voice in link.quickLinks.voice">{{ voice }}</li>
+
                     </ul>
                 </div>
                 <div class="col-3">
