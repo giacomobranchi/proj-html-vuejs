@@ -449,37 +449,68 @@ export default {
                 <div class="row justify-content-center p-0 m-0">
                     <div class="col_2">
                         <div class="card text-white" style="width: 100%%;">
-                            <h4 class="position-absolute">FASHION</h4>
+                            <div class="position-absolute">
+                                <h4>FASHION</h4>
+                                <div class="text-center">
+                                    4 POSTS
+                                </div>
+                            </div>
+
                             <img src="../assets/img/anime-fashion.webp" class="card-img-top position-relative" alt="...">
                         </div>
                     </div>
                     <div class="col_2">
-                        <div class="card" style="width: 100%%;">
-                            <h4 class="position-absolute text-white">CULTURE</h4>
+                        <div class="card text-white" style="width: 100%%;">
+                            <div class="position-absolute">
+                                <h4>CULTURE</h4>
+                                <div class="text-center">
+                                    4 POSTS
+                                </div>
+                            </div>
                             <img src="../assets/img/success-story.webp" class="card-img-top position-relative" alt="...">
                         </div>
                     </div>
                     <div class="col_2">
-                        <div class="card" style="width: 100%%;">
-                            <h4 class="position-absolute text-white">FOOD</h4>
+                        <div class="card text-white" style="width: 100%%;">
+                            <div class="position-absolute">
+                                <h4>FOOD</h4>
+                                <div class="text-center">
+                                    4 POSTS
+                                </div>
+                            </div>
                             <img src="../assets/img/healthy-foods.webp" class="card-img-top position-relative" alt="...">
                         </div>
                     </div>
                     <div class="col_2">
-                        <div class="card" style="width: 100%%;">
-                            <h4 class="position-absolute text-white">LIFESTYLE</h4>
+                        <div class="card text-white" style="width: 100%%;">
+                            <div class="position-absolute">
+                                <h4>LIFESTYLE</h4>
+                                <div class="text-center">
+                                    4 POSTS
+                                </div>
+                            </div>
                             <img src="../assets/img/visit-france.webp" class="card-img-top position-relative" alt="...">
                         </div>
                     </div>
                     <div class="col_2">
-                        <div class="card" style="width: 100%%;">
-                            <h4 class="position-absolute text-white">STORIES</h4>
+                        <div class="card text-white" style="width: 100%%;">
+                            <div class="position-absolute">
+                                <h4>STORIES</h4>
+                                <div class="text-center">
+                                    4 POSTS
+                                </div>
+                            </div>
                             <img src="../assets/img/travel-alone.webp" class="card-img-top position-relative" alt="...">
                         </div>
                     </div>
                     <div class="col_2">
-                        <div class="card" style="width: 100%%;">
-                            <h4 class="position-absolute text-white">TRAVEL</h4>
+                        <div class="card text-white" style="width: 100%%;">
+                            <div class="position-absolute">
+                                <h4>STORIES</h4>
+                                <div class="text-center">
+                                    4 POSTS
+                                </div>
+                            </div>
                             <img src="../assets/img/best-places.webp" class="card-img-top position-relative" alt="...">
                         </div>
                     </div>
@@ -625,6 +656,29 @@ main {
 
         & .position-absolute {
             top: 40%;
+
+            & .text-center {
+                display: none;
+            }
+
+
+        }
+
+        & .card {
+            &:hover {
+                & .position-absolute {
+                    border: 1px solid white;
+                    padding: 0 1rem;
+                }
+
+                & img {
+                    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+                }
+
+                & .text-center {
+                    display: block;
+                }
+            }
         }
 
         & .row {
