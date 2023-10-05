@@ -70,7 +70,7 @@ export default {
                                 <span class="badge">Fashion</span>
                                 <span class="badge">Lifestyle</span>
                             </div>
-                            s<img style="filter: brightness(0.6);" src="../assets/img/anime-fashion.webp"
+                            <img style="filter: brightness(0.6);" src="../assets/img/anime-fashion.webp"
                                 class="card-img-top position-relative" alt="...">
                             <div class="align-self-center position-absolute text-white font-sm w-100 text-center"
                                 style="top: 75%;">
@@ -504,6 +504,7 @@ export default {
 }
 
 
+
 main {
     & .carousel {
         padding: 1.5rem;
@@ -584,6 +585,11 @@ main {
             aspect-ratio: 1;
             text-align: center;
 
+            &:hover {
+                background-color: #bf1d2e;
+            }
+
+
             & svg {
                 fill: white;
             }
@@ -605,6 +611,10 @@ main {
             padding: 0.4rem 3rem;
             border-radius: 1.5rem;
             margin-top: 0.5rem;
+
+            &:hover {
+                background-color: #555353;
+            }
         }
     }
 

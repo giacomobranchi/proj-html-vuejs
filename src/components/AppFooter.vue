@@ -2,8 +2,18 @@
 export default {
     data() {
         return {
-            name: 'AppFooter'
+            name: 'AppFooter',
+            bgBtn: 'background-color: #555353; color: white;'
         }
+    },
+    methods: {
+        btnHover() {
+            this.bgBtn = 'color: #bf1d2e !important; background-color: white !important;'
+        },
+        btnLeave() {
+            this.bgBtn = 'background-color: #555353; color: white;'
+        }
+
     }
 }
 </script>
@@ -51,7 +61,8 @@ export default {
                 <div class="col-3">
                     <div>SUBSCRIBE TO NEWSLETTER</div>
                     <input class="w100" type="text" name="email" id="" placeholder="Email">
-                    <button type="button" class="btn btn_bg text-white w-100">SUBSCRIBE</button>
+                    <button @mouseover="btnHover" @mouseleave="btnLeave" type="button" class="btn btn_bg w-100"
+                        :style="bgBtn">SUBSCRIBE</button>
                 </div>
             </div>
             <hr>
@@ -86,9 +97,13 @@ footer {
         margin: 1rem 0;
     }
 
-    & button {
+    & li {
+        font-weight: 600;
 
-        background-color: #555353;
+        &:hover {
+            color: #555353;
+        }
     }
+
 }
 </style>
