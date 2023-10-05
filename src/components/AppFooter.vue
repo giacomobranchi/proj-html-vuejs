@@ -50,14 +50,14 @@ export default {
                 </div>
                 <div class="col-3">
                     <div>SUBSCRIBE TO NEWSLETTER</div>
-                    <input type="text" name="email" id="" placeholder="Email">
-                    <button type="button" class="btn btn_bg w-100">Read More</button>
+                    <input class="w100" type="text" name="email" id="" placeholder="Email">
+                    <button type="button" class="btn btn_bg text-white w-100">SUBSCRIBE</button>
                 </div>
             </div>
             <hr>
             <div class="row justify-content-between align-items-center">
                 <div class="col-2">
-                    <img src="./assets/img/anime-whitelogo-300x89.png" alt="">
+                    <img src="../assets/img/anime-whitelogo-300x89.png" alt="">
                 </div>
                 <div class="col-3">
                     <small>© Anime Tech, Theme by HasnainDEV</small>
